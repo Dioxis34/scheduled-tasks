@@ -27,7 +27,7 @@ now = dt.datetime.now()
 
 # 2. Check if today matches a birthday in the birthdays.csv
 for (index, row) in data.iterrows():
-    if row.year == now.year and row.month == now.month and row.day == now.day:
+    if row.month == now.month and row.day == now.day:
         recipient_email = row.email
         recipient_name = row.get("name")
 
